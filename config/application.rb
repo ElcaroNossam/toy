@@ -6,6 +6,13 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+require 'fog/core'
+Fog::Logger[:deprecation] = nil
+
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(*Rails.groups)
+
 module Toy
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
