@@ -11,7 +11,7 @@ gem "sprockets-rails"
 gem "rack"
 # Use sqlite3 as the database for Active Record
 
-
+gem 'rails-controller-testing'
 # Use the Puma web server [https://github.com/puma/puma]
 
 

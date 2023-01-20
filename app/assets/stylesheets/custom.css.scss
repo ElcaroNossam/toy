@@ -1,0 +1,156 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+html {
+  height: 100%; 
+
+body {
+height: 100%;
+ display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  padding-block-start: 60px;
+  padding-inline-start: 100px;
+  padding-block-end: 10px;
+  padding-inline-end: 10px;
+}
+
+
+
+section {
+  overflow: auto;
+
+}
+
+textarea {
+  resize: vertical;
+}
+
+
+.center {
+  text-align: center;
+    h1 {
+        margin-bottom: 50px;
+         color: red;
+      }
+
+}
+
+
+.center h2 {
+  margin-bottom: 50px;
+}
+
+.sonya {
+   
+    padding-block-start: 50px;
+    border: 10px solid #080;
+	
+}
+.loh {
+  flex: 1 0 auto;
+	padding-block-start: 20px;
+
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -3px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: Times New Roman;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #089;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/* header */
+
+#logo {
+  float: left;
+  margin-left: -50px;
+  font-size: 1.7em;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  font-family: Times New Roman;
+
+  &:hover {
+    color: #089;
+    text-decoration: none;
+  }
+}
+
+header {
+  
+ 
+  color: #089;
+  a {
+     color: #777;
+     &:hover {
+         color: blue;
+            }
+         }
+}
+
+/* footer */
+
+footer {
+  flex-shrink: 1;
+  margin-top: 55px;
+  margin-left: -100px;
+  margin-right: -10px;
+  padding-top: 15px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+
+    a {
+         color: #508;
+          &:hover {
+              color: red;
+                  }
+         }
+        small {
+          float: left;
+          margin-left: 250px;
+        }
+
+        ul {
+            float: right;
+            list-style: none;
+            margin-right: 250px;
+              color: red;
+     
+
+            li {
+                float: left;
+                margin-left: 15px;
+              }
+          }
+    }
+
+}
+
+
+
+
