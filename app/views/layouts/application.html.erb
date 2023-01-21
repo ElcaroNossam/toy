@@ -8,15 +8,25 @@
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
   </head>
+
   <body>
+   
     <%= render 'layouts/header' %>
-   <div class="loh">
-      <section class=" sonya container">
-         <%= yield %>        
-      </section>   
-   </div>
-<div class="footer">
-   <%= render 'layouts/footer' %> 
-</div>
+   
+     <div class="loh">
+        <section class=" sonya container">
+           <%= yield %>        
+        </section>   
+        <div class="image">
+<%= link_to image_tag("rails1.png", alt: "Rails logo"),
+            'http://rubyonrails.org/' %>
+        </div>
+     </div>
+
+    <div class="footer">
+       <%= render 'layouts/footer' %> 
+    </div>
+
   </body>
+
 </html>

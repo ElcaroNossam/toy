@@ -96,7 +96,7 @@ p {
   font-family: Times New Roman;
 
   &:hover {
-    color: #089;
+    color: #508;
     text-decoration: none;
   }
 }
@@ -108,7 +108,7 @@ header {
   a {
      color: #777;
      &:hover {
-         color: blue;
+         color: #508;
             }
          }
 }
@@ -149,6 +149,11 @@ footer {
           }
     }
 
+}
+
+.image {
+ margin-top: 50px;
+  margin-left: 825px;
 }
 
 
