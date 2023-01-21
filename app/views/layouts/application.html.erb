@@ -14,6 +14,11 @@
     <%= render 'layouts/header' %>
    
      <div class="loh">
+      
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+
         <section class=" sonya container">
            <%= yield %>        
         </section>   
@@ -26,7 +31,7 @@
     <div class="footer">
        <%= render 'layouts/footer' %> 
     </div>
-
+<%= debug(params) if Rails.env.development? %>
   </body>
 
 </html>
