@@ -5,7 +5,7 @@ ruby "3.1.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.1"
-
+gem 'puma'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 gem "rack"
@@ -13,7 +13,10 @@ gem "rack"
 
 gem 'rails-controller-testing'
 # Use the Puma web server [https://github.com/puma/puma]
+gem 'unicorn', '~> 6.1.0'
 
+gem 'sidekiq', '~> 6.5.5'
+gem 'redis', '~> 4.7.1'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -91,7 +94,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
+  gem 'pg', '~> 1.3.5'
   gem 'rails_12factor'
   gem 'puma'          
 end

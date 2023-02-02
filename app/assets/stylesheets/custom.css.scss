@@ -9,6 +9,24 @@
   box-sizing:         border-box;
 }
 
+.cool {
+  color: rgb(245, 245, 245);
+  @keyframes color-change{
+    0% {
+      color:#089;
+    }
+    50% {
+      color:#508;
+    }
+    100% {
+      color:#089;
+    }
+  }
+  animation: color-change, 3s, infinite;
+
+}
+
+
 /* universal */
 html {
   height: 100%; 
@@ -102,19 +120,22 @@ p {
   float: left;
   margin-left: -50px;
   font-size: 1.7em;
-  color: rgb(99, 0, 230);
+  color: rgb(137, 104, 181);
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   font-family: Times New Roman;
-
+  
   &:hover {
     color: #508;
     background-color: rgb(34, 31, 31);  
     text-decoration: none;
   }
-}
+  
+  }
+
+
 .header {  
   background-color: rgb(112, 7, 7);  
   position: fixed;
@@ -309,4 +330,22 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+
+#cool { 
+  
+  @keyframes color-change {
+    0% {
+      color:#089;
+    }
+    50% {
+      color:#508;
+    }
+    100% {
+      color:#089;
+    }
+  }
+  animation: color-change, 3s, infinite;
+  
 }

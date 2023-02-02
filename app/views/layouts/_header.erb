@@ -1,6 +1,8 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
+  
     <%= link_to "sample app", root_path, id: "logo" %>
+   
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
@@ -11,12 +13,12 @@
             <button class="mainmenubtn">Главное меню</button>
             <div class="dropdown-child">
             <li><%= link_to "Profile", current_user %></li>
-            <li><%= link_to "Settings", '#' %></li>
+            <li><%= link_to "Settings", edit_user_path(current_user) %></li>
             <li class="divider"></li>
             <li><%= link_to "Log out", logout_path, method: "delete" %></li>
             <% else %>
             <li><%= link_to "Log in", login_path %></li>
-            <li><a href="http://www.вашдомен.ru/page5.html">Подраздел 5</a></li>
+            <li><a id="cool", href="http://www.вашдомен.ru/page5.html">Подраздел 5</a></li>
           <% end %>
              
             </div>
