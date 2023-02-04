@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   get 'logout'  => 'sessions#destroy'
+
+  get 'index'   => 'static_pages#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resources :users
