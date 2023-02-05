@@ -12,7 +12,7 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def index
+  def game
   end
 
 end

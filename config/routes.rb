@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
+  
   
   root             'static_pages#home'
   get     'help'    => 'static_pages#help'
@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
+  delete  'delete' => 'users#destroy'
   get 'logout'  => 'sessions#destroy'
 
-  get 'index'   => 'static_pages#index'
+  get 'game'   => 'static_pages#game'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   resources :users
