@@ -36,7 +36,7 @@ gem "fog",                     '1.36.0'
 gem 'will_paginate'           
 gem 'bootstrap-will_paginate'
 gem 'bootstrap-sass'         
-            
+gem 'cloudinary'           
 gem 'uglifier'               
 gem 'coffee-rails'           
 gem 'jquery-rails'          
